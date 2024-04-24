@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-mobile": "url('/images/hero-mobile.jpg')",
+        "hero-desktop": "url('/images/hero-desktop.jpg')",
+        "pattern-desktop": "url('/images/bg-pattern-desktop.svg')",
+      },
+    },
   },
   plugins: [],
 };
