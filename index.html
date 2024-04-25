@@ -11,7 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
     <link rel="stylesheet" href="./src/style.css" />
 
@@ -28,7 +33,7 @@
   </head>
   <body>
     <main
-      class="min-h-screen flex justify-center bg-pattern-desktop bg-no-repeat"
+      class="min-h-screen flex justify-center bg-pattern-desktop bg-no-repeat font-JosefinSans"
     >
       <div
         class="flex flex-col justify-center m-5 md:grid md:grid-rows-4 md:grid-cols-2 md:gap-4"
@@ -58,13 +63,13 @@
         <div
           class="md:row-span-4 bg-hero-mobile md:bg-hero-desktop bg-no-repeat h-full"
         ></div>
-        <div class="text-[3rem] text-center uppercase tracking-[1rem]">
+        <div class="text-[3rem] text-center uppercase tracking-[1rem] mb-6">
           <p>We're</p>
           <p>Coming</p>
           <p>Soon</p>
         </div>
-        <div>
-          <p>
+        <div class="text-center">
+          <p class="w-[350px] md:w-[450px]">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.

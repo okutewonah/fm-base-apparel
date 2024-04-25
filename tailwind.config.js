@@ -8,6 +8,9 @@ module.exports = {
         "hero-desktop": "url('/images/hero-desktop.jpg')",
         "pattern-desktop": "url('/images/bg-pattern-desktop.svg')",
       },
+      fontFamily: {
+        JosefinSans: ['"Josefin Sans"', "sans-serif"],
+      },
     },
   },
   plugins: [],
