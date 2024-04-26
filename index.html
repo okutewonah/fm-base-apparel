@@ -36,7 +36,7 @@
       class="min-h-screen flex justify-center bg-pattern-desktop bg-no-repeat font-JosefinSans"
     >
       <div
-        class="flex flex-col justify-center m-5 md:grid md:grid-rows-4 md:grid-cols-2 md:gap-4"
+        class="flex flex-col justify-center m-5 md:grid md:grid-rows-3 md:grid-cols-2 md:gap-4"
       >
         <div class="flex my-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="158" height="33">
@@ -61,22 +61,47 @@
           </svg>
         </div>
         <div
-          class="md:row-span-4 bg-hero-mobile md:bg-hero-desktop bg-no-repeat h-full"
+          class="md:row-span-3 bg-hero-mobile md:bg-hero-desktop bg-no-repeat h-full"
         ></div>
-        <div class="text-[3rem] text-center uppercase tracking-[1rem] mb-6">
-          <p>We're</p>
-          <p>Coming</p>
-          <p>Soon</p>
+        <div class="text-[3rem] uppercase tracking-[1rem] mb-6">
+          <p class="text-desaturated-red font-light">We're</p>
+          <p class="font-semibold">Coming</p>
+          <p class="font-semibold">Soon</p>
         </div>
-        <div class="text-center">
-          <p class="w-[350px] md:w-[450px]">
+        <div class="grid gap-4">
+          <p class="w-[350px] md:w-[450px] text-desaturated-red">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-        </div>
-        <div>
-          <input type="email" id="email" placeholder="Email Address" />
+          <div class="relative">
+            <input
+              class="border w-full h-[50px] pl-9 rounded-full"
+              type="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <img
+              class="absolute top-3 right-24"
+              src="./images/icon-error.svg"
+              alt="error-icon"
+            />
+            <button
+              class="absolute right-0 top-0 bg-gradient-to-r from-linear-135-deg-start to-linear-135-deg-stop w-[80px] h-[50px] flex justify-center items-center rounded-3xl"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
+            </button>
+            <p class="text-sm ml-9 mt-2 text-desaturated-red">
+              Please provide a valid email
+            </p>
+          </div>
         </div>
       </div>
     </main>
