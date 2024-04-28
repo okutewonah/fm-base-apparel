@@ -74,33 +74,39 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <div class="relative">
-            <input
-              class="border w-full h-[50px] pl-9 rounded-full"
-              type="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <img
-              class="absolute top-3 right-24"
-              src="./images/icon-error.svg"
-              alt="error-icon"
-            />
-            <button
-              class="absolute right-0 top-0 bg-gradient-to-r from-linear-135-deg-start to-linear-135-deg-stop w-[80px] h-[50px] flex justify-center items-center rounded-3xl"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-                <path
-                  fill="none"
-                  stroke="#FFF"
-                  stroke-width="2"
-                  d="M1 1l8.836 8.836L1 18.671"
-                />
-              </svg>
-            </button>
-            <p class="text-sm ml-9 mt-2 text-desaturated-red">
-              Please provide a valid email
-            </p>
+          <div>
+            <div class="relative">
+              <input
+                class="border w-full h-[50px] pl-9 rounded-full invalid:[&:not(:placeholder-shown):not(:focus)]:border-soft-red peer"
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <img
+                class="absolute top-3 right-24 hidden peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <button
+                class="absolute right-0 top-0 bg-gradient-to-r from-linear-135-deg-start to-linear-135-deg-stop hover:from-linear-135-deg-start hover:to-linear-135-deg-start w-[80px] h-[50px] flex justify-center items-center rounded-3xl"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M1 1l8.836 8.836L1 18.671"
+                  />
+                </svg>
+              </button>
+              <p
+                id="error-message"
+                class="text-sm ml-9 mt-2 text-desaturated-red hidden peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+              >
+                Please provide a valid email
+              </p>
+            </div>
           </div>
         </div>
       </div>
