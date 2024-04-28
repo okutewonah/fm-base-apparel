@@ -2237,6 +2237,11 @@ video {
   color: hsl(0 93% 68% / var(--tw-text-opacity));
 }
 
+.text-dark-grayish-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 6% 24% / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
