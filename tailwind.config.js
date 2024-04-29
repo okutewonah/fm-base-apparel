@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       backgroundImage: {
-        "hero-mobile": "url('/src/images/hero-mobile.jpg')",
-        "hero-desktop": "url('/src/images/hero-desktop.jpg')",
-        "pattern-desktop": "url('/src/images/bg-pattern-desktop.svg')",
+        "hero-mobile": "url('/images/hero-mobile.jpg')",
+        "hero-desktop": "url('/images/hero-desktop.jpg')",
+        "pattern-desktop": "url('/images/bg-pattern-desktop.svg')",
       },
       fontFamily: {
         JosefinSans: ['"Josefin Sans"', "sans-serif"],
